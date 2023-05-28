@@ -66,7 +66,7 @@ class DoublyLinkedList:
         while node is not None:
             nodeToRemove = node
             node = node.next
-            if nodeToRemove .value == value:
+            if nodeToRemove.value == value:
                 self.remove(node)
         
     def remove(self, node):

@@ -23,7 +23,7 @@ def findClosest(root, target):
     return closest
 
     
-""" def findClosest(tree, target):
+def findClosest(tree, target):
     return findClosestValueBSThelper(tree, target, math.inf)
 
 def findClosestValueBSThelper(tree, target, closest):
@@ -38,7 +38,7 @@ def findClosestValueBSThelper(tree, target, closest):
     elif target < tree.val:
         return findClosestValueBSThelper(tree.left, target, closest)
     else:
-        return closest """
+        return closest
          
 # TC O(logN) -> removing half of the tree
 # SC O(1) 

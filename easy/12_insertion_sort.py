@@ -1,4 +1,8 @@
-# O(n^2) T | O(1) S
+# list of numbers
+# iterate multiple times over list, swap numbers if unsorted
+# inner loop goes backward
+
+# O(N^2) T | O(1) S
 def insertionSort(array):
     for i in range(1, len(array)):
         j = i
