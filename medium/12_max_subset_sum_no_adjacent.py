@@ -11,8 +11,6 @@ def maxSubsetSumNoAdjacent(array):
     for i in range(2, len(array)):
         maxSums[i] = max(maxSums[i - 1], maxSums[i -2] + array[i])
         
-        
-    return maxSums
     return maxSums[-1]
 
 # O(N) T | O(1) S

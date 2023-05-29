@@ -43,7 +43,7 @@ class BST:
         if not root:
             return root
         
-        if value  >  root.val:
+        if value > root.val:
             root.right = self.remove(root.right, value)
         elif value < root.val:
             root.left = self.remove(root.left, value)
