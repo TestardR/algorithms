@@ -5,7 +5,7 @@ class MinHeap:
     def buildHeap(self, array):
         # - 2 because siftUp does -1 :: not super clear
         firstParentIdx = (len(array) - 2) // 2
-        for currentIdx in reversed(range(firstParentIdx)):
+        for currentIdx in reversed(range(firstParentIdx + 1)):
             self.siftDown(currentIdx, len(array) - 1, array)
             
         return array
