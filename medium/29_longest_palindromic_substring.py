@@ -9,7 +9,6 @@ def longestPalindromicSubstring(string):
         longest = max(odd, even, key = lambda x: x[1] - x[0])
         currentLongest = max(longest, currentLongest, key = lambda x: x[1] - x[0])
     
-    print(currentLongest)
     return string[currentLongest[0]:currentLongest[1]]
 
 def getLongestPalindromeFrom(string, leftIdx, rightIdx):

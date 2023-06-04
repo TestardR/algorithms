@@ -19,7 +19,7 @@ class MinHeap:
     def siftDown(self, currentIdx, endIdx, heap):
         childOneIdx = currentIdx * 2 + 1
         while childOneIdx <= endIdx:
-            childTwoIdx = currentIdx * 2 + 2 if currentIdx % 2 + 2 <= endIdx else -1
+            childTwoIdx = currentIdx * 2 + 2 if currentIdx * 2 + 2 <= endIdx else -1
             if childTwoIdx != -1 and heap[childTwoIdx] < heap[childOneIdx]:
                 idxToSwap = childTwoIdx    
             else:
