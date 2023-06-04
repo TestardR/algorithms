@@ -4,7 +4,7 @@ def moveElementToTheEnd(array, target):
     right = len(array) - 1
     
     while left < right:
-        while array[right] == target:
+        while left < right and array[right] == target:
             right -= 1
         
         if array[left] == target:

@@ -1,7 +1,7 @@
 # O(N) T | O(N) S
 # denoms is the array of coin denominations
 def numberOfWaysToMakeChange(n, denoms):
-    ways = [0 for amount in range(n + 1)] # 0 to target amount n
+    ways = [0 for _ in range(n + 1)] # 0 to target amount n
     ways[0] = 1 # set to 0 as if our target amount is 0, there is only one way to change the amount
     
     for denom in denoms:

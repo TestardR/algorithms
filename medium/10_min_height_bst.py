@@ -1,5 +1,3 @@
-import pprint
-
 class BST:
     def __init__(self, value):
         self.value = value
@@ -43,7 +41,7 @@ def constuctMinHeightBST(array, bst, startIdx, endIdx):
 
 # O(N) T | O(N) S
 def minHeightBST(array):
-    return constuctMinHeightBST(array, None, 0, len(array) -1)
+    return constuctMinHeightBST(array, 0, len(array) -1)
     
 def constuctMinHeightBST(array, startIdx, endIdx):
     if endIdx < startIdx:

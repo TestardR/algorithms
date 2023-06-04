@@ -4,7 +4,7 @@ def spiralTraverse(array):
     startRow, endRow = 0, len(array) - 1
     startCol, endCol = 0, len(array[0]) - 1
 
-    while startRow <= endRow and startCol <= endCol:
+    while startRow < endRow and startCol < endCol:
         # top row
         for col in range(startCol, endCol + 1):
             result.append(array[startRow][col])

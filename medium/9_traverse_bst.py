@@ -1,5 +1,5 @@
 # O(N) T | O(N) S
-def inOrderTraverse(tree, array): # bottom left upward
+def inOrderTraverse(tree, array): # bottom left then top right
     if tree is None:
         return array
     
@@ -8,7 +8,7 @@ def inOrderTraverse(tree, array): # bottom left upward
     inOrderTraverse(tree.right, array)
 
 # O(N) T | O(N) S
-def preOrderTraverse(tree, array): # top left then right
+def preOrderTraverse(tree, array): # top left then to right
     if tree is None:
         return array
     
@@ -17,7 +17,7 @@ def preOrderTraverse(tree, array): # top left then right
     inOrderTraverse(tree.right, array)
 
 # O(N) T | O(N) S
-def postOrderTraverse(tree, array): # top left then right
+def postOrderTraverse(tree, array): # bottom left then bottom right
     if tree is None:
         return array
     

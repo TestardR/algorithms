@@ -9,7 +9,7 @@ def minNumberOfCoinsForChange(n, denoms):
     numberOfCoins[0] = 0
     
     for denom in denoms:
-        for amount in range(1, len(numberOfCoins)):
+        for amount in range(1, n + 1):
             if denom <= amount:
                 numberOfCoins[amount] = min(numberOfCoins[amount], 1 + numberOfCoins[amount - denom])
                 

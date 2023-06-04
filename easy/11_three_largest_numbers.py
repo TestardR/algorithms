@@ -18,3 +18,5 @@ def shiftAndUpdate(threeLargest, num, idx):
             threeLargest[i] = num
         else:
             threeLargest[i] = threeLargest[i+1]
+
+str(print(findThreeLargestNumbers([1, 2, 10, 111, 3])))
