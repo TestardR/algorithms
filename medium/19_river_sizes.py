@@ -53,3 +53,5 @@ def getUnvisitedNeighbors(i, j, matrix, visited):
         unvisitedNeighbors.append([i, j + 1])
         
     return unvisitedNeighbors
+
+print(str(riverSizes([[1,1,1],[1,1,0],[1,0,1]])))
