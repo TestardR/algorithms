@@ -11,7 +11,7 @@ class Solution:
 
         res = []
         # loop in reverse order, from 0 until last index
-        for i in range(len(freq) - 1, -1, -1):
+        for i in range(len(freq) - 1, 0, -1):
             for n in freq[i]:
                 res.append(n)
                 if len(res) == k:
@@ -19,4 +19,3 @@ class Solution:
                 
 
 print(Solution().topKFrequent([1,1,1,2,2,3], 2))
-               
