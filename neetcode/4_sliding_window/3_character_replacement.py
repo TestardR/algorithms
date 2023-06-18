@@ -3,16 +3,16 @@ class Solution:
         count = {}
         res = 0
 
-        leftIdx = 0
+        start = 0
         maxFrequency = 0
-        for rightIdx in range(len(s)):
-            count[s[rightIdx]] = 1 + count.get(s[rightIdx], 0)
-            maxFrequency = max(maxFrequency, count[s[rightIdx]])
+        for end in range(len(s)):
+            count[s[end]] = 1 + count.get(s[end], 0)
+            maxFrequency = max(maxFrequency, count[s[end]])
 
-            if rightIdx - leftIdx + 1 - maxFrequency > k:
-                count[s[rightIdx]] -= 1
-                leftIdx += 1
+            if end - start + 1 - maxFrequency > k:
+                count[s[end]] -= 1
+                start += 1
                 
-            res = max(res, rightIdx - leftIdx + 1)
+            res = max(res, end - start + 1)
 
         return res
