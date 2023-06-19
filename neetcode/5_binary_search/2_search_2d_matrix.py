@@ -37,7 +37,7 @@ def searchMatrix(matrix, target):
         midIdx = (leftIdx + rightIdx) // 2
         if target > matrix[row][midIdx]:
             leftIdx = midIdx + 1
-        elif target < matrix[row][matrix]:
+        elif target < matrix[row][midIdx]:
             rightIdx = midIdx - 1
         else:
             return True
