@@ -3,7 +3,7 @@ class Solution:
         self.res = None
         self.k = k
         
-        # pre order traversal is key
+        # in order traversal is key
         def dfs(node):
             if not node or self.res:
                 return
