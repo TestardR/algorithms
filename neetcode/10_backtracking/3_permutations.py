@@ -1,5 +1,5 @@
 class Solution:
-    def permute(self, nums: List[int]) -> List[List[int]]:
+    def permute(self, nums):
         res = []
 
         # base case
@@ -15,3 +15,5 @@ class Solution:
             res.extend(perms)
             nums.append(n)
         return res
+    
+print(Solution().permute([1,2,3]))
