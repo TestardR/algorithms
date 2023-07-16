@@ -8,18 +8,18 @@ class Solution:
             if target == nums[mid]:
                 return mid
 
-            # left sorted portion
-            # if left part is monotonically increasing, or the pivot point is on the right part
+            # we are in the left portion
             if nums[left] <= nums[mid]:
                 if target > nums[mid] or target < nums[left]:
                     left = mid + 1
                 else:
                     right = mid - 1
-            # right sorted portion
-            #if right part is monotonically increasing, or the pivot point is on the left part
+            
+            # we are in the right portion
             else:
                 if target < nums[mid] or target > nums[right]:
                     right = mid - 1
                 else:
                     left = mid + 1
         return -1
+

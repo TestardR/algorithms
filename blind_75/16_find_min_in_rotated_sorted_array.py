@@ -58,12 +58,12 @@ class Solution:
         while left < right:
             mid = (left + right) // 2
             
-            # min in the right
+            # min/pivot in the right
             if nums[mid] > nums[right]:
-                right = mid + 1
-            # min in the left
+                left = mid + 1
+            # min/pivot in the left
             else:
-                left = mid
+                right = mid
                 
         return nums[left] 
             
